@@ -1,0 +1,24 @@
+name: SWILL EARNER
+
+on:
+  schedule:
+    - cron: '0 */4 * * *'
+  workflow_dispatch:
+
+jobs:
+  earn:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+      - run: pip install requests beautifulsoup4 lxml fake-useragent
+      - run: python main.py
+      - uses: actions/upload-artifact@v3
+        with:
+          name: earnings-data
+          path: |
+            earnings.db
+            STATS.txt
+          retention-days: 30
