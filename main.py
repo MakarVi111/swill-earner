@@ -20,10 +20,10 @@ from pathlib import Path
 # ========== ТВОИ ДАННЫЕ - ЗАПОЛНИ ==========
 
 # 1️⃣ ЮMONEY (можно хранить в коде - публичная информация)
-YOOMONEY_WALLET = "410011234567890"  # Твой кошелек ЮMoney
+YOOMONEY_WALLET = "4100119073789215"  # Твой кошелек ЮMoney
 
 # 2️⃣ USDT TRC20 (можно хранить в коде - публичный адрес)
-USDT_ADDRESS = "TRXxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"  # Твой USDT адрес (TRC20)
+USDT_ADDRESS = "TJdc6qAhprHASzG2TGchN5Ex2YficdpmCj"  # Твой USDT адрес (TRC20)
 USDT_NETWORK = "TRC20"  # Сеть (всегда TRC20)
 
 # 3️⃣ НАСТРОЙКИ
